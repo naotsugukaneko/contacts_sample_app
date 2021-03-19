@@ -1,6 +1,7 @@
 class ContactMailer < ApplicationMailer
-  def user_email
-    @greeting = "Hi"
+  
+  def user_email(name:, email:)
+    @name = name
     mail(
       to: email,
       subject: "【お問い合わせアプリ】お問い合わせを受付いたしました"
@@ -8,9 +9,6 @@ class ContactMailer < ApplicationMailer
   end
 
   def admin_email
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
     
   end
 end

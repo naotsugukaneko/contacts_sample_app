@@ -1,0 +1,11 @@
+<% if @contact.error.any? %>
+  <div id="error_explanation">
+      <h2><%= @contact.errors.count %> つのエラーがあります</h2>
+      
+      <ur>
+          <% @contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ur>
+  </div>
+<% end %>

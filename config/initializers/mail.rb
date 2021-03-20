@@ -12,6 +12,6 @@ if Rails.env.production?
         authentication: "plain"
     }
 elsif Rails.env.development?
-    ActionMailer::Base.default_url_options = { host: 'localhost:3000' }
+    ActionMailer::Base.default_url_options = { host: '9dfc8e35835848b6b7d21e96d8cc1205.vfs.cloud9.us-east-2.amazonaws.com/' }
     ActionMailer::Base.delivery_method = :letter_opener_web
 end

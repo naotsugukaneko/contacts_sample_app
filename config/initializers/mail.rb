@@ -2,7 +2,7 @@ if Rails.env.production?
     host = "mysterious-earth-57087.herokuapp.com/"
     ActionMailer::Base.raise_delivery_errors = true
     ActionMailer::Base.delivery_method = :smtp
-    ActionMailer::Base.default_url_optons = { host: host }
+    ActionMailer::Base.default_url_options = { host: host }
     ActionMailer::Base.stmp_settings = {
         port: 587,
         address: "smtp.gmail.com",
